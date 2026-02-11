@@ -1,3 +1,5 @@
+# CSRF trusted origins for production
+CSRF_TRUSTED_ORIGINS = ['https://nofinishnrbdjango.fly.dev']
 """
 Django settings for backend project.
 
