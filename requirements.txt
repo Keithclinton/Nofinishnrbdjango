@@ -4,3 +4,4 @@ django-environ
 djangorestframework
 djangorestframework-simplejwt
 requests
+gunicorn
