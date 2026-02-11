@@ -1,3 +1,6 @@
+  
+[processes]
+  app = "gunicorn backend.wsgi:application --bind 0.0.0.0:8000"
 # fly.toml app configuration file generated for nofinishnrbdjango on 2026-02-11T19:13:02Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
