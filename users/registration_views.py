@@ -18,7 +18,7 @@ class IndividualRegistrationView(APIView):
             first_name = parts[0]
             last_name = ' '.join(parts[1:]) if len(parts) > 1 else ''
         from django.contrib.auth.base_user import BaseUserManager
-        random_password = BaseUserManager().make_random_password()
+        random_password = BaseUserManager.make_random_password()
         user_data = {
             'first_name': first_name,
             'last_name': last_name,
