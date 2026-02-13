@@ -16,7 +16,6 @@ media/
 # Environments
 venv/
 .env
-.env.*
 
 # OS
 .DS_Store
