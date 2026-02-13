@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Django
+*.log
+staticfiles/
+media/
+
+# VSCode
+.vscode/
+
+# Environments
+venv/
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# Node
+node_modules/
+
+# Docker
+*.pid
+
+# Test
+.coverage
+htmlcov/
+
+# Others
+*.sqlite3
+*.bak
+*.swp
+*.swo

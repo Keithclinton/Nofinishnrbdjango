@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from common.blog_views import BlogPostListView, ImpactStoryListView, ClinicListView, ChallengeEntryCreateView
+from common.pesapal_views import PesapalPaymentInitView, PesapalPaymentStatusView
 from common.volunteer_views import VolunteerApplicationView
 from common.shop_views import ProductListView, OrderCreateView
 
@@ -33,4 +34,6 @@ urlpatterns = [
     path('volunteers/', VolunteerApplicationView.as_view(), name='volunteer-application'),
     path('shop/products/', ProductListView.as_view(), name='shop-products'),
     path('shop/orders/', OrderCreateView.as_view(), name='shop-orders'),
+    path('api/pesapal/initiate/', PesapalPaymentInitView.as_view(), name='pesapal-initiate'),
+    path('api/pesapal/status/<str:order_tracking_id>/', PesapalPaymentStatusView.as_view(), name='pesapal-status'),
 ]
